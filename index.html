@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pegar info das ações</title>
+  </head>
+  <body>
+    <label>Status: </label
+    ><span id="status">Escreva um ticker e clique no botão</span>
+    <br />
+    <input placeholder="Ticker da ação BR" type="text" id="ticker" />
+    <button onclick="pegaDados()">Baixar dados</button>
+    <br />
+    <label>Valor:</label>
+    <br />
+    <input type="text" value="" id="valor" placeholder="valores das ações" />
+    <br />
+    <label>Data:</label>
+    <br />
+    <input type="text" value="" id="data" placeholder="data dos ações" />
+    <div>Dica: Usar Ctrl + X para não achar que copiou errado</div>
+  </body>
+  <script type="text/javascript" src="./server.js"></script>
+</html>
