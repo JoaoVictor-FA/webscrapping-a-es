@@ -1,0 +1,36 @@
+{
+  "name": "webscrapping-acoes",
+  "version": "1.0.0",
+  "description": "programa para pegar dados financeiros",
+  "main": "main.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.12",
+    "puppeteer": "^10.1.0",
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "electron": "^18.2.3",
+    "electron-builder": "^23.0.3"
+  },
+  "scripts": {
+    "test": "node server.js",
+    "dev": "electron .",
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "author": "Jv",
+  "license": "ISC",
+  "build": {
+    "appId": "com.mjoao.app",
+    "productName": "Web scrapping ações",
+    "target": "NSIS",
+    "directories": {
+      "output": "build"
+    },
+    "nsis": {
+      "allowToChangeInstallationDirectory": true,
+      "oneClick": false
+    }
+  }
+}
